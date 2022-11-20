@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://2D Pixel Dungeon Asset Pack/items and trap_animation/hearts/Over_HP.png" type="Texture" id=1]
+[ext_resource path="res://2D Pixel Dungeon Asset Pack/items and trap_animation/hearts/Progress_HP.png" type="Texture" id=2]
+[ext_resource path="res://Сцены/Hp_bar.gd" type="Script" id=3]
+
+[node name="HP_bar" type="TextureProgress"]
+margin_left = -32.0
+margin_top = -120.0
+margin_right = 468.0
+margin_bottom = 380.0
+value = 100.0
+texture_over = ExtResource( 1 )
+texture_progress = ExtResource( 2 )
+tint_progress = Color( 0.933333, 0.054902, 0.054902, 1 )
+script = ExtResource( 3 )
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+margin_left = -16.0
+margin_top = -16.0
+margin_right = 48.0
+margin_bottom = -2.0
